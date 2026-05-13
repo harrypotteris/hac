@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Link Scanner</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <div class="page-container">
+
+    <h1 class="text-5xl font-bold text-red-400 mb-10">
+      Link Scanner
+    </h1>
+
+    <div class="glass-card">
+
+      <input
+        id="urlInput"
+        type="text"
+        placeholder="Paste suspicious URL"
+        class="input-box"
+      >
+
+      <button class="scan-btn" onclick="scanURL()">
+        Scan URL
+      </button>
+
+      <div id="result" class="result-box"></div>
+
+    </div>
+
+  </div>
+
+  <script src="../js/linkScanner.js"></script>
+
+</body>
+</html>

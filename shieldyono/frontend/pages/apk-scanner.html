@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>APK Scanner</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <div class="page-container">
+
+    <h1 class="text-5xl font-bold text-yellow-400 mb-10">
+      APK Scanner
+    </h1>
+
+    <div class="glass-card">
+
+      <input id="filename" class="input-box" placeholder="APK Filename">
+      <input id="package" class="input-box" placeholder="Package Name">
+      <input id="cert" class="input-box" placeholder="Certificate Issuer">
+      <input id="hash" class="input-box" placeholder="SHA256 Hash">
+
+      <button class="scan-btn" onclick="scanAPK()">
+        Scan APK
+      </button>
+
+      <div id="apkResult" class="result-box"></div>
+
+    </div>
+
+  </div>
+
+  <script src="../js/apkScanner.js"></script>
+
+</body>
+</html>
